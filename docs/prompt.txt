@@ -1,0 +1,35 @@
+Baca IMPLEMENTATION_INSTRUCTIONS.md terlebih dahulu.
+
+Kemudian baca seluruh dokumen yang dirujuk.
+
+Jangan menulis kode.
+
+Jangan membuat file aplikasi.
+
+Jangan membuat komponen.
+
+Jangan membuat database migration.
+
+Tugas pertama adalah melakukan audit dokumentasi dan membuat Project Implementation Plan.
+
+Implementation Plan harus mencakup:
+
+1. Architecture Review
+2. Folder Structure Review
+3. Database Review
+4. UI/UX Review
+5. SEO Review
+6. AI System Review
+7. Security Review
+8. Development Phases
+9. Risks
+10. Missing Decisions
+11. Suggested Improvements
+
+Pastikan seluruh rencana mematuhi semua dokumen proyek.
+
+Jika ada konflik antar dokumen, jelaskan.
+
+Jika ada keputusan yang belum jelas, tanyakan.
+
+Jangan mulai coding sampai mendapatkan persetujuan atas Implementation Plan.
