@@ -1,61 +1,91 @@
-Milestone 2 disetujui.
+Saya ingin melakukan technical review independen terhadap implementasi Milestone 2 dan Milestone 3.
 
-Sebelum melanjutkan, lakukan audit dan verifikasi berikut:
+JANGAN memberikan ringkasan atau penjelasan terlebih dahulu.
 
-1. Responsive Audit
-   Pastikan seluruh layout telah diuji pada:
+Tampilkan isi file berikut secara LENGKAP dan UTUH dalam blok code:
 
-- 320px
-- 375px
-- 390px
-- 768px
-- 1024px
-- 1440px
-- 1920px
+1.
+supabase/migrations/20260622000000_init.sql
 
-Pastikan tidak ada:
+2.
+app/admin/page.tsx
 
-- horizontal scroll
-- overflow
-- text clipping
-- sidebar overlap
-- layout shift
+3.
+app/admin/products/page.tsx
 
-2. Accessibility Audit
-   Pastikan:
+4.
+features/products/components/product-form.tsx
 
-- keyboard navigation berfungsi
-- focus state terlihat jelas
-- aria labels diterapkan jika diperlukan
-- kontras memenuhi WCAG AA
+5.
+app/admin/login/page.tsx
 
-3. Visual Verification
-   Berikan screenshot atau visual preview untuk:
+6.
+app/auth/callback/route.ts
 
-- Login Desktop
-- Login Mobile
-- Dashboard Desktop
-- Dashboard Mobile
-- Dark Mode
-- Light Mode
+7.
+services/supabase.service.ts
 
-Setelah audit selesai, jangan langsung mengerjakan scraping.
+8.
+services/supabase-browser.service.ts
 
-Lanjutkan ke Milestone 3:
+Setelah seluruh file ditampilkan, berikan laporan review teknis dengan format berikut:
 
-Admin Product Management Foundation
+# DATABASE REVIEW
 
-Fokus pada:
+- Jumlah tabel yang ditemukan
+- Foreign key yang ditemukan
+- Index yang ditemukan
+- Constraint yang ditemukan
+- RLS policy yang ditemukan
+- Potensi masalah database
+- Skor database (0-10)
 
-- Product List Page
-- Product Detail Page
-- Product Create/Edit Form
-- Category Management
-- Tag Management
-- Collection Management
+# AUTH REVIEW
 
-Gunakan data dummy terlebih dahulu.
+- Metode autentikasi yang digunakan
+- Cara proteksi admin
+- Potensi celah keamanan
+- Skor auth (0-10)
 
-Tujuannya adalah mematangkan UI, UX, navigasi, dan workflow admin sebelum marketplace adapter, import queue, dan AI system diintegrasikan.
+# PRODUCT MANAGEMENT REVIEW
 
-Setelah Milestone 3 selesai, berhenti dan tunggu review.
+- Apakah CRUD benar-benar terimplementasi
+- Apakah validasi form ada
+- Apakah upload gambar ada
+- Apakah error handling ada
+- Apakah loading state ada
+- Skor product management (0-10)
+
+# ADMIN DASHBOARD REVIEW
+
+- Apakah dashboard nyata atau placeholder
+- Data apa saja yang ditampilkan
+- Apakah sudah terhubung ke database
+- Skor dashboard (0-10)
+
+# CODE QUALITY REVIEW
+
+- Struktur kode
+- Reusability
+- Type safety
+- Maintainability
+- Potensi technical debt
+- Skor code quality (0-10)
+
+# FINAL VERDICT
+
+Pilih salah satu:
+
+A. Milestone 2-3 benar-benar selesai dan siap lanjut Milestone 4
+
+B. Milestone 2-3 sebagian selesai dan perlu perbaikan sebelum Milestone 4
+
+C. Milestone 2-3 masih berupa kerangka awal dan belum layak lanjut
+
+Jelaskan alasan teknis secara rinci.
+
+PENTING:
+- Jangan menyimpulkan tanpa melihat isi file.
+- Jangan menganggap file yang ada berarti fitur sudah selesai.
+- Fokus pada implementasi nyata yang terdapat dalam source code.
+- Jika output terlalu panjang, tampilkan file satu per satu dan tunggu instruksi "lanjut" sebelum file berikutnya.
