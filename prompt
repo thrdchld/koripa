@@ -1,0 +1,61 @@
+Milestone 2 disetujui.
+
+Sebelum melanjutkan, lakukan audit dan verifikasi berikut:
+
+1. Responsive Audit
+   Pastikan seluruh layout telah diuji pada:
+
+- 320px
+- 375px
+- 390px
+- 768px
+- 1024px
+- 1440px
+- 1920px
+
+Pastikan tidak ada:
+
+- horizontal scroll
+- overflow
+- text clipping
+- sidebar overlap
+- layout shift
+
+2. Accessibility Audit
+   Pastikan:
+
+- keyboard navigation berfungsi
+- focus state terlihat jelas
+- aria labels diterapkan jika diperlukan
+- kontras memenuhi WCAG AA
+
+3. Visual Verification
+   Berikan screenshot atau visual preview untuk:
+
+- Login Desktop
+- Login Mobile
+- Dashboard Desktop
+- Dashboard Mobile
+- Dark Mode
+- Light Mode
+
+Setelah audit selesai, jangan langsung mengerjakan scraping.
+
+Lanjutkan ke Milestone 3:
+
+Admin Product Management Foundation
+
+Fokus pada:
+
+- Product List Page
+- Product Detail Page
+- Product Create/Edit Form
+- Category Management
+- Tag Management
+- Collection Management
+
+Gunakan data dummy terlebih dahulu.
+
+Tujuannya adalah mematangkan UI, UX, navigasi, dan workflow admin sebelum marketplace adapter, import queue, dan AI system diintegrasikan.
+
+Setelah Milestone 3 selesai, berhenti dan tunggu review.
