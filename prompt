@@ -1,91 +1,204 @@
-Saya ingin melakukan technical review independen terhadap implementasi Milestone 2 dan Milestone 3.
+Buat file baru bernama PROJECT_STATUS.md di root project.
 
-JANGAN memberikan ringkasan atau penjelasan terlebih dahulu.
+Tujuan file ini adalah agar developer baru atau AI lain bisa memahami kondisi proyek hanya dengan membaca satu file.
 
-Tampilkan isi file berikut secara LENGKAP dan UTUH dalam blok code:
+Analisis seluruh source code dan isi file dengan format berikut.
+
+# PROJECT STATUS
+
+## Ringkasan Proyek
+
+- Nama proyek:
+- Tujuan proyek:
+- Target pengguna:
+- Status saat ini:
+  - MVP
+  - Alpha
+  - Beta
+  - Production
+
+## Progress Keseluruhan
+
+Persentase penyelesaian berdasarkan implementasi nyata di source code.
+
+Contoh:
+
+- Frontend: 80%
+- Backend: 60%
+- Database: 40%
+- Authentication: 100%
+- Deployment: 50%
+
+## Struktur Folder
+
+Berikan tree folder yang disederhanakan.
+
+Contoh:
+
+app/
+components/
+lib/
+supabase/
+public/
+
+Lalu jelaskan fungsi masing-masing folder.
+
+## Fitur yang Sudah Selesai
+
+Daftar hanya fitur yang benar-benar sudah berfungsi berdasarkan source code.
+
+Format:
+
+### Nama Fitur
+
+Status: ✅ Selesai
+
+Deskripsi:
+...
+
+File terkait:
+- app/...
+- components/...
+
+## Fitur Sebagian Selesai
+
+Daftar fitur yang sudah ada implementasi tetapi belum lengkap.
+
+Format:
+
+### Nama Fitur
+
+Status: ⚠️ Sebagian
+
+Yang sudah ada:
+...
+
+Yang belum ada:
+...
+
+## Fitur Belum Dibuat
+
+Daftar fitur yang disebut dalam README, roadmap, issue, atau UI tetapi belum memiliki implementasi nyata.
+
+Format:
+
+### Nama Fitur
+
+Status: ❌ Belum dibuat
+
+## Dummy / Mock / Placeholder
+
+Cari seluruh bagian yang masih menggunakan:
+
+- hardcoded data
+- mock data
+- dummy API
+- TODO
+- FIXME
+- temporary code
+
+Format:
+
+### Lokasi
+
+File:
+...
+
+Masalah:
+...
+
+## Database Status
+
+Jika menggunakan Supabase/Postgres:
+
+### Tabel
+
+| Tabel | Status |
+|---------|---------|
+
+### Migration
+
+- jumlah migration
+- migration terakhir
+
+### RLS
+
+- Sudah ada
+- Belum ada
+
+## Authentication Status
+
+- Login
+- Register
+- Session
+- Role
+- Admin
+
+Tandai:
+
+✅ Berfungsi
+⚠️ Sebagian
+❌ Belum ada
+
+## API Status
+
+Daftar endpoint yang ada.
+
+Format:
+
+| Endpoint | Method | Status |
+|-----------|----------|---------|
+
+## Deployment Status
+
+- Local Development
+- Vercel
+- Supabase
+- Domain
+- CI/CD
+
+## Technical Debt
+
+Daftar masalah teknis yang ditemukan.
+
+Urutkan berdasarkan prioritas:
+
+### High Priority
+
+...
+
+### Medium Priority
+
+...
+
+### Low Priority
+
+...
+
+## Next Priority
+
+Urutkan 10 pekerjaan berikutnya yang paling penting untuk membawa proyek menuju production.
+
+Format:
 
 1.
-supabase/migrations/20260622000000_init.sql
-
 2.
-app/admin/page.tsx
-
 3.
-app/admin/products/page.tsx
 
-4.
-features/products/components/product-form.tsx
+## Estimasi Kesiapan Production
 
-5.
-app/admin/login/page.tsx
+Berikan penilaian objektif:
 
-6.
-app/auth/callback/route.ts
-
-7.
-services/supabase.service.ts
-
-8.
-services/supabase-browser.service.ts
-
-Setelah seluruh file ditampilkan, berikan laporan review teknis dengan format berikut:
-
-# DATABASE REVIEW
-
-- Jumlah tabel yang ditemukan
-- Foreign key yang ditemukan
-- Index yang ditemukan
-- Constraint yang ditemukan
-- RLS policy yang ditemukan
-- Potensi masalah database
-- Skor database (0-10)
-
-# AUTH REVIEW
-
-- Metode autentikasi yang digunakan
-- Cara proteksi admin
-- Potensi celah keamanan
-- Skor auth (0-10)
-
-# PRODUCT MANAGEMENT REVIEW
-
-- Apakah CRUD benar-benar terimplementasi
-- Apakah validasi form ada
-- Apakah upload gambar ada
-- Apakah error handling ada
-- Apakah loading state ada
-- Skor product management (0-10)
-
-# ADMIN DASHBOARD REVIEW
-
-- Apakah dashboard nyata atau placeholder
-- Data apa saja yang ditampilkan
-- Apakah sudah terhubung ke database
-- Skor dashboard (0-10)
-
-# CODE QUALITY REVIEW
-
-- Struktur kode
-- Reusability
-- Type safety
-- Maintainability
-- Potensi technical debt
-- Skor code quality (0-10)
-
-# FINAL VERDICT
-
-Pilih salah satu:
-
-A. Milestone 2-3 benar-benar selesai dan siap lanjut Milestone 4
-
-B. Milestone 2-3 sebagian selesai dan perlu perbaikan sebelum Milestone 4
-
-C. Milestone 2-3 masih berupa kerangka awal dan belum layak lanjut
-
-Jelaskan alasan teknis secara rinci.
+- Kesiapan Production: XX%
+- Risiko terbesar:
+- Bottleneck terbesar:
+- Saran langkah berikutnya:
 
 PENTING:
-- Jangan menyimpulkan tanpa melihat isi file.
-- Jangan menganggap file yang ada berarti fitur sudah selesai.
-- Fokus pada implementasi nyata yang terdapat dalam source code.
-- Jika output terlalu panjang, tampilkan file satu per satu dan tunggu instruksi "lanjut" sebelum file berikutnya.
+
+- Jangan mengarang.
+- Hanya gunakan informasi yang benar-benar ditemukan di source code.
+- Jika tidak ditemukan, tulis "Tidak ditemukan".
+- Jangan menandai fitur selesai jika hanya ada UI tanpa backend.
+- Jangan menandai fitur selesai jika hanya ada database tanpa frontend.
+- Bersikap kritis seperti technical auditor.
